@@ -10,27 +10,50 @@
 
 .login-form {
   background: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login-form input {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 10px;
-  width: 90%;
+  width: 100%;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .login-form button {
-  padding: 10px;
-  width: 80%;
+  padding: 10px 20px;
+  width: 100%;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  right: 200px;
+  margin-bottom: 10px;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.register-link {
+  margin-top: 10px;
+}
+
+.register-link button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.register-link button:hover {
+  text-decoration: underline;
 }

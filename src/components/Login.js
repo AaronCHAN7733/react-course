@@ -19,14 +19,33 @@ const Login = () => {
     }
   };
 
+  const handleRegister = () => {
+    navigate('/register');
+  };
+
   return (
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit} className="login-form">
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
+        <input 
+          type="email" 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+          placeholder="Email" 
+          required 
+        />
+        <input 
+          type="password" 
+          value={password} 
+          onChange={(e) => setPassword(e.target.value)} 
+          placeholder="Password" 
+          required 
+        />
         <button type="submit">Login</button>
       </form>
+      <div className="register-link">
+        <button onClick={handleRegister}>Don't have an account? Register here</button>
+      </div>
     </div>
   );
 };
