@@ -1,8 +1,9 @@
+// src/components/Home.js
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { signOut } from 'firebase/auth';
 import { auth, db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
+import Navbar from './Navbar';
 import './Home.css';
 
 const Home = () => {
@@ -25,22 +26,9 @@ const Home = () => {
     fetchUserDetails();
   }, [navigate]);
 
-  const handleLogout = async () => {
-    await signOut(auth);
-    navigate('/login');
-  };
-
   return (
     <div className="home-container">
-      <nav className="navbar">
-        <div className="navbar-left">
-          <h2>Home Page</h2>
-        </div>
-        <div className="navbar-right">
-          <span className="username">{username}</span>
-          <button className="logout-button" onClick={handleLogout}>Logout</button>
-        </div>
-      </nav>
+      <Navbar username={username} />
       <div className="content">
         <h2>Welcome to Home Page</h2>
       </div>

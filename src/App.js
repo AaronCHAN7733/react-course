@@ -3,13 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
-import { AuthProvider, useAuth } from './components/AuthContext';
-
-const ProtectedRoute = ({ element }) => {
-  const { user } = useAuth();
-
-  return user ? element : <Navigate to="/login" replace />;
-};
+import Users from './components/Users'; // Assuming you have this route
+import { AuthProvider } from './components/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
 
 const App = () => {
   return (
@@ -19,6 +15,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<ProtectedRoute element={<Home />} />} />
+          <Route path="/users" element={<ProtectedRoute element={<Users />} />} />
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </Router>
