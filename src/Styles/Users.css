@@ -1,0 +1,65 @@
+/* src/components/Users.css */
+.users-container {
+  padding: 0;
+  margin: 0;
+}
+
+.users-container h2 {
+  margin-top: 0;
+}
+
+.users-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-container th, .users-container td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.users-container th {
+  background-color: #f2f2f2;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+  background-color: #ddd;
+}
+
+.users-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.users-table td, .users-table th {
+  padding: 12px 15px;
+}
+
+.users-table {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .users-table td.email,
+  .users-table td.phone {
+    max-width: 120px; /* Limita el ancho máximo de la celda */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .users-table td.email:hover,
+  .users-table td.phone:hover {
+    overflow: visible;
+    white-space: normal;
+    max-width: none;
+  }
+}

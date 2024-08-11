@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { auth, db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import Navbar from './Navbar';
-import './Home.css';
+import '../Styles/Home.css';
 
 const Home = () => {
   const [username, setUsername] = useState('');

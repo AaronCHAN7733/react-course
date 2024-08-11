@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../firebase';
-import './Login.css';
+import '../Styles/Login.css';
+import GoogleIcon from '../components/img/google-37.png'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -21,6 +22,16 @@ const Login = () => {
 
   const handleRegister = () => {
     navigate('/register');
+  };
+
+  const handleGoogleSignIn = async () => {
+    const provider = new GoogleAuthProvider();
+    try {
+      await signInWithPopup(auth, provider);
+      navigate('/home');
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (
@@ -43,7 +54,11 @@ const Login = () => {
         />
         <button type="submit">Login</button>
       </form>
-      <div className="register-link">
+      <div className="login-options">
+        <button className="google-sign-in" onClick={handleGoogleSignIn}>
+          <img src={GoogleIcon} alt="Google icon" className="google-icon" />
+          Sign in with Google
+        </button>
         <button onClick={handleRegister}>Don't have an account? Register here</button>
       </div>
     </div>

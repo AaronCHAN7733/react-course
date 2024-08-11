@@ -1,9 +1,8 @@
-// src/components/Users.js
 import React, { useEffect, useState } from 'react';
 import { auth, db } from '../firebase'; // Import auth and db
 import { collection, getDocs, doc, getDoc } from 'firebase/firestore';
 import Navbar from './Navbar';
-import './Users.css';
+import '../Styles/Users.css';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -44,8 +43,8 @@ const Users = () => {
           {users.map((user, index) => (
             <tr key={index}>
               <td>{user.username}</td>
-              <td>{user.email}</td>
-              <td>{user.phone}</td>
+              <td className="email">{user.email}</td>
+              <td className="phone">{user.phone}</td>
             </tr>
           ))}
         </tbody>

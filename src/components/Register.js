@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
 import { db } from '../firebase'; // Import Firestore
 import { doc, setDoc } from 'firebase/firestore'; // Import Firestore methods
-import './Register.css';
+import '../Styles/Register.css';
 
 const Register = () => {
   const [email, setEmail] = useState('');
