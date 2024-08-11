@@ -1,0 +1,150 @@
+[debug] [2024-08-11T03:20:03.630Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T03:20:03.632Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-08-11T03:20:03.632Z] CLI Version:   13.15.1
+[debug] [2024-08-11T03:20:03.633Z] Platform:      win32
+[debug] [2024-08-11T03:20:03.633Z] Node Version:  v20.12.2
+[debug] [2024-08-11T03:20:03.633Z] Time:          Sat Aug 10 2024 22:20:03 GMT-0500 (hora estándar oriental)
+[debug] [2024-08-11T03:20:03.633Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-11T03:20:03.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T03:20:03.639Z] > authorizing via signed-in user (2202030@utrivieramaya.edu.mx)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\aaron\Desktop\react-course
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-11T03:20:19.120Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-08-11T03:20:19.620Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-08-11T03:20:19.620Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project reactjs-8535f (reactJs) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-08-11T03:20:23.664Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-08-11T03:20:23.664Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/reactjs-8535f
+[debug] [2024-08-11T03:20:24.174Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firebasedatabase.googleapis.com 200
+[debug] [2024-08-11T03:20:24.175Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-08-11T03:20:24.176Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/reactjs-8535f/locations/-/instances/reactjs-8535f-default-rtdb [none]
+[debug] [2024-08-11T03:20:24.679Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/reactjs-8535f/locations/-/instances/reactjs-8535f-default-rtdb 200
+[debug] [2024-08-11T03:20:24.679Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/reactjs-8535f/locations/-/instances/reactjs-8535f-default-rtdb {"name":"projects/1061620234875/locations/us-central1/instances/reactjs-8535f-default-rtdb","project":"projects/1061620234875","databaseUrl":"https://reactjs-8535f-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-08-11T03:20:32.643Z] >>> [apiv2][query] GET https://reactjs-8535f-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-08-11T03:20:33.624Z] <<< [apiv2][status] GET https://reactjs-8535f-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-08-11T03:20:33.624Z] <<< [apiv2][body] GET https://reactjs-8535f-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for reactjs-8535f-default-rtdb have been written to y. 
+[info] Future modifications to y will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-08-11T03:20:33.628Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firestore.googleapis.com [none]
+[debug] [2024-08-11T03:20:33.628Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firestore.googleapis.com x-goog-quota-user=projects/reactjs-8535f
+[debug] [2024-08-11T03:20:34.116Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firestore.googleapis.com 200
+[debug] [2024-08-11T03:20:34.117Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/firestore.googleapis.com [omitted]
+[debug] [2024-08-11T03:20:34.117Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default) [none]
+[debug] [2024-08-11T03:20:34.563Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default) 200
+[debug] [2024-08-11T03:20:34.563Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default) {"name":"projects/reactjs-8535f/databases/(default)","uid":"b0f6a4a2-a2f3-4128-83f2-727971336acd","createTime":"2024-08-03T06:28:06.694739Z","updateTime":"2024-08-03T06:28:06.694739Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-08-11T02:20:34.500795Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IKLMtuD964cDMKTe3pWZ2IcD"}
+[debug] [2024-08-11T03:20:34.563Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-08-11T03:20:34.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T03:20:34.564Z] > authorizing via signed-in user (2202030@utrivieramaya.edu.mx)
+[debug] [2024-08-11T03:20:34.564Z] [iam] checking project reactjs-8535f for permissions ["firebase.projects.get"]
+[debug] [2024-08-11T03:20:34.564Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions [none]
+[debug] [2024-08-11T03:20:34.564Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions x-goog-quota-user=projects/reactjs-8535f
+[debug] [2024-08-11T03:20:34.564Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-11T03:20:34.963Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions 200
+[debug] [2024-08-11T03:20:34.964Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-08-11T03:20:38.628Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/reactjs-8535f/releases pageSize=10&pageToken=
+[debug] [2024-08-11T03:20:38.966Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/reactjs-8535f/releases 200
+[debug] [2024-08-11T03:20:38.967Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/reactjs-8535f/releases {"releases":[{"name":"projects/reactjs-8535f/releases/cloud.firestore","rulesetName":"projects/reactjs-8535f/rulesets/48927051-3ed5-4d03-b50f-6a0e4e16dc85","createTime":"2024-08-03T06:28:08.255783Z","updateTime":"2024-08-03T06:28:08.255783Z"}]}
+[debug] [2024-08-11T03:20:38.967Z] Found ruleset: projects/reactjs-8535f/rulesets/48927051-3ed5-4d03-b50f-6a0e4e16dc85
+[debug] [2024-08-11T03:20:38.967Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/reactjs-8535f/rulesets/48927051-3ed5-4d03-b50f-6a0e4e16dc85 [none]
+[debug] [2024-08-11T03:20:39.108Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/reactjs-8535f/rulesets/48927051-3ed5-4d03-b50f-6a0e4e16dc85 200
+[debug] [2024-08-11T03:20:39.108Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/reactjs-8535f/rulesets/48927051-3ed5-4d03-b50f-6a0e4e16dc85 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-08-11T03:20:42.820Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-08-11T03:20:42.822Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-08-11T03:20:43.290Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-08-11T03:20:43.291Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/reactjs-8535f/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2024-08-11T03:20:43.311Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-08-11T03:20:43.311Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/reactjs-8535f/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2024-08-11T03:20:43.312Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T03:20:43.312Z] > authorizing via signed-in user (2202030@utrivieramaya.edu.mx)
+[debug] [2024-08-11T03:20:43.312Z] [iam] checking project reactjs-8535f for permissions ["firebase.projects.get"]
+[debug] [2024-08-11T03:20:43.313Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions [none]
+[debug] [2024-08-11T03:20:43.313Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions x-goog-quota-user=projects/reactjs-8535f
+[debug] [2024-08-11T03:20:43.313Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-11T03:20:43.728Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions 200
+[debug] [2024-08-11T03:20:43.728Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reactjs-8535f:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-11T03:20:43.728Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-08-11T03:20:43.728Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/reactjs-8535f
+[debug] [2024-08-11T03:20:43.730Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-08-11T03:20:43.731Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/reactjs-8535f
+[debug] [2024-08-11T03:20:44.289Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/runtimeconfig.googleapis.com 200
+[debug] [2024-08-11T03:20:44.289Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-08-11T03:20:44.305Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/cloudfunctions.googleapis.com 200
+[debug] [2024-08-11T03:20:44.305Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reactjs-8535f/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2024-08-11T03:20:54.808Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reactjs-8535f [none]
+[debug] [2024-08-11T03:20:55.126Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reactjs-8535f 200
+[debug] [2024-08-11T03:20:55.126Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reactjs-8535f {"projectId":"reactjs-8535f","projectNumber":"1061620234875","displayName":"reactJs","name":"projects/reactjs-8535f","resources":{"hostingSite":"reactjs-8535f","realtimeDatabaseInstance":"reactjs-8535f-default-rtdb"},"state":"ACTIVE","etag":"1_540614bb-d107-45f7-bcb4-1a8e1c59078e"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-08-11T03:20:59.767Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-08-11T03:20:59.952Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-08-11T03:20:59.952Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.5","browserURL":"https://www.gstatic.com/firebasejs/10.12.5/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.5/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.5/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.5/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.5/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.5/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.5/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.5/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.5/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.5/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.5/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.5/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.memory.js"}}
+[debug] [2024-08-11T03:21:00.173Z] Error: ENOTDIR: not a directory, scandir 'C:\Users\aaron\Desktop\react-course\y'
+    at Object.readdirSync (node:fs:1508:26)
+    at Object.createFileSync (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:183:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:177:9)
+    at async init (C:\Users\aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:40:9)
+[error] 
+[error] Error: An unexpected error has occurred.
